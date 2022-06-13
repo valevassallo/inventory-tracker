@@ -3,4 +3,10 @@
     <strong>Address:</strong>
     <%= warehouse.address %>
   </p>
+  <h5>Items in this warehouse</h5>
+  <ul>
+    <% warehouse.items.each do |item| %>
+      <li><%= item.name %></li>
+    <% end %>
+  </ul>
 </div>
